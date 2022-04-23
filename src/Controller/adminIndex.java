@@ -21,7 +21,16 @@ public class adminIndex extends javax.swing.JFrame {
     public adminIndex() {
         initComponents();
     }
-
+    public String checkUserName(String Name){
+        String result = " ";
+        if(Name.equals("Admin")){
+            result = "correct";
+        }
+        else{
+            result = "incorrect";
+        }
+        return result;
+    }
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
